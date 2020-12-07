@@ -32,15 +32,15 @@
         </nav>
     
         <address class="address">
-            <ul class="list">
-            <li><a class="header-contact-mail link" href="mailto:info@devstudio.com">
+            <ul class="address-link list">
+            <li class="address-list-item"><a class="header-contact-mail link" href="mailto:info@devstudio.com">
                 <svg class="mail"/>
-                <use href="./sprite.svg#icon-envelope" width= "16" height="12"></use>
+                <use href="./sprite.svg#icon-envelope" width="16" height="12"></use>
                 </svg>info@devstudio.com
                 </a></li>
-            <li><a class="header-contact-tel link" href="tel:+380961111111">
+            <li class="address-list-item"><a class="header-contact-tel link" href="tel:+380961111111">
                 <svg class="mail"/>
-                <use href="./sprite.svg#icon-smartphone" width= "16" height="12"></use>
+                <use href="./sprite.svg#icon-smartphone" width="16" height="12"></use>
                 </svg>+38 096 111 11 11
                 </a></li>
         </ul>
@@ -60,19 +60,43 @@
                 <h2 class="visually-hidden">Особенности</h2>
             
                 <ul class="hero-specification-list list">
-                    <li class="hero-specification-list-item">
+                    
+                    <li class="hero-specification-list-item icon-antenna">
+                        <div class="specification-container">
+                            <svg class="specification-icon">
+                                <use href="./sprite.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
                         <h3 class="hero-specification-heading">Внимание к деталям</h3>
                         <p class="hero-specification-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li class="hero-specification-list-item">
+                    
+                    <li class="hero-specification-list-item icon-clock">
+                        <div class="specification-container">
+                            <svg class="specification-icon">
+                                <use href="./sprite.svg#icon-clock"></use>
+                            </svg>
+                        </div>
                         <h3 class="hero-specification-heading">Пунктуальность</h3>
                         <p class="hero-specification-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li class="hero-specification-list-item">
+                    
+                    <li class="hero-specification-list-item icon-diagram">
+                        <div class="specification-container">
+                            <svg class="specification-icon">
+                                <use href="./sprite.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
                         <h3 class="hero-specification-heading">Планирование</h3>
                         <p class="hero-specification-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li class="hero-specification-list-item">
+                    
+                    <li class="hero-specification-list-item icon-astronaut">
+                        <div class="specification-container">
+                            <svg class="specification-icon">
+                                <use href="./sprite.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
                         <h3 class="hero-specification-heading">Современные технологии</h3>
                         <p class="hero-specification-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -298,8 +322,8 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
+    <footer class="footer container">
+        <div class="footer-container-address">
     <a class="footer-logo-link link" href="/" aria-label="логотип сайта">
             <span class="logo-link">Web</span><span class="logo-right-dark">Studio</span></a>
         <address class="address">
@@ -309,7 +333,39 @@
                 <li class="footer-address-list-item"><a class="footer-contact-tel link" href="tel:+380991111111">+38 096 111 11 11</a></li>
              </ul>
         
-        </address>
+        </address></div>
+        <div class="footer-container-connect">
+        <p class="connect">ПРИСОЕДИНЯЙТЕСЬ</p>
+        <ul class="footer-social-list list">
+            <li class="footer-social-list-item">
+                <a class="footer-social-list-link link" href="">
+                <svg class="footer-social-list-icon">
+                <use href="./sprite.svg#icon-instagram"></use>
+                </svg>
+                </a>
+            </li>
+            <li class="footer-social-list-item">
+                <a class="footer-social-list-link link" href="">
+                <svg class="footer-social-list-icon">
+                <use href="./sprite.svg#icon-twitter"></use>
+                </svg>
+                </a>
+            </li>
+            <li class="footer-social-list-item">
+                <a class="footer-social-list-link link" href="">
+                <svg class="footer-social-list-icon">
+                <use href="./sprite.svg#icon-facebook"></use>
+                </svg>
+                </a>
+            </li>
+        <li class="footer-social-list-item">
+            <a class="footer-social-list-link link" href="">
+            <svg class="footer-social-list-icon">
+            <use href="./sprite.svg#icon-linkedin"></use>
+            </svg>
+            </a>
+        </li>
+         </ul>
         </div>
     </footer>
 </body>
