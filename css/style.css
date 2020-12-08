@@ -76,9 +76,10 @@ img {
   /*====header===*/
 
 .header {
-padding-top: 24px;
-padding-bottom: 24px;
+padding-top: 32px;
+padding-bottom: 32px;
 border-bottom: 1px solid #ececec;
+
 }
 
 .header .container {
@@ -93,24 +94,8 @@ border-bottom: 1px solid #ececec;
 .header .address {
     margin-left: auto;
   }
-.header-contact-mail, .header-contact-tel {
-    align-items: center;
-    width: 16px;
-    height: 12px;
-    fill: #757575;
-     }
-.address-link:not(:last-child) {
-  margin-right: 30px;
-}
-.address-link {
-  display: flex;
-  align-items: center;
-}
-.header-icon {
-  width: 16px;
-  height: 12px;
-  fill: #757575;
-}
+
+
 
 .navigation {
   display: flex;
@@ -158,7 +143,31 @@ color: var(--primary-text-color);
 .header-contact-tel:focus {
   color: #2196F3;
 }
+.header-contact-mail:hover .header-icon,
+.header-contact-mail:focus .header-icon,
+.header-contact-tel:hover .header-icon,
+.header-contact-tel:focus .header-icon {
+   fill: currentColor;
+}
+.header-contact-mail, .header-contact-tel {
+  display: inline-flex;
+  align-items: center;
+  fill: #757575;
+   }
 
+.address-link {
+display: inline-flex;
+align-items: baseline;
+}
+.header-icon {
+width: 16px;
+height: 19px;
+fill: #757575;
+align-items: center;
+margin-right: 10px;
+margin-left: 30px;
+
+}
 .header-contact-mail, .header-contact-tel {
 font-family: var(--main-font);
 font-weight: 500;
@@ -606,7 +615,7 @@ border: 1px solid #eeeeee;*/
   
   }*/
   
-  .footer-logo-link {
+.footer-logo-link {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -622,7 +631,7 @@ border: 1px solid #eeeeee;*/
   letter-spacing: 0.03em;
   color:rgba(255, 255, 255, 0.6);
   }
-  .footer-address-list {
+.footer-address-list {
     margin-right: 70px;
   }
 .footer-address-list-item:not(last-child) {
@@ -638,58 +647,66 @@ border: 1px solid #eeeeee;*/
     color: var(--primary-white-color);
     margin-top: 20px;
   }
-  
-.footer-contact-mail:hover,
-.footer-contact-mail:focus,
-.footer-contact-tel:hover,
-.footer-contact-tel:focus {
-    color: #2196F3;}
+  .connect {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    padding-top: 12px;
+  }
 
-
-    .footer-social-list {
+  .footer-container-address {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .address {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-container-connect {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-social-list {
       display: flex;
       justify-content: space-between;
     }
-    .footer-social-list-icon {
+  .footer-social-list-item:not(last-child) {
+      margin-right: 10px;
+    }
+    
+  .footer-social-list-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color:  rgba(255, 255, 255, 0.1);
+}    
+  .footer-social-list-icon {
       fill: #FFFFFF;
       width: 20px;
       height: 20px;
-    }
-    .footer-social-list-item:not(last-child) {
-      margin-right: 10px;
-    }
-.footer-social-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color:  rgba(255, 255, 255, 0.1);
 }
+  
+  .footer-contact-mail:hover,
+  .footer-contact-mail:focus,
+  .footer-contact-tel:hover,
+  .footer-contact-tel:focus {
+      color: #2196F3;}
 
-    .footer-social-list-link:hover,
-    .footer-social-list-link:focus {
+  .footer-social-list-link:hover,
+  .footer-social-list-link:focus {
       background-color: #2196F3;;
     }
-    .footer-social-list-link:hover .footer-social-list-icon,
-    .footer-social-list-link:focus .footer-social-list-icon {
+  .footer-social-list-link:hover .footer-social-list-icon,
+  .footer-social-list-link:focus .footer-social-list-icon {
       fill: var(--primary-white-color)
     }
-    .footer-container-connect {
-      display: flex;
-    }
-    .connect {
-      font-family: var(--main-font);
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1,143;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: #FFFFFF;
-      margin-bottom: 20px;
-      padding-top: 12px;
-    }
-
   /*====end footer====*/
   
