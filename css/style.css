@@ -386,7 +386,7 @@ margin: 0 auto;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color:  #F5F4FA;
+  
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -656,12 +656,16 @@ border: 1px solid #eeeeee;*/
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-    padding-top: 12px;
+    
+
   }
 
   .footer-container-address {
-    flex-direction: column;
+    display: flex;
     align-items: baseline;
+  }
+  .footer-logo-address {
+    flex-direction: column;
   }
   .address {
     display: flex;
@@ -674,7 +678,9 @@ border: 1px solid #eeeeee;*/
   .footer-social-list {
       display: flex;
       justify-content: space-between;
+
     }
+    
   .footer-social-list-item:not(last-child) {
       margin-right: 10px;
     }
